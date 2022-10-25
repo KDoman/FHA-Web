@@ -336,17 +336,47 @@ nav #navSocialMedias img:hover{
     font-family: var(--fontFamily);
     color: var(--whiteColorLogo);
 }
+/* ---------------------------------------------------------- */
+/* ----------------------- PAGE "ABOUT US" ------------------ */
+/* ---------------------------------------------------------- */
+#aboutUsFirstDiv{
+    height: 60vh;
+    background-image: url(FlowHousebackground.png);
+    background-size: cover;
+}
+#aboutUsSecondDiv{
+    font-family: var(--fontFamily);
+}
+#aboutUsSecondDivText h1{
+    text-align: center;
+    padding-top: 8vh
+}
+#aboutUsSecondDivText img{
+    width: 200px;
+    height: 200px;
+    padding: 8vh 0;
+}
+#aboutUsSecondDivText p{
+    padding: 0 10vw;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+#galeryDiv{
+    padding: 8vh;
+    display:flex;
+    justify-content: center;
+}
 
 
 /*  ------------------------------------------------------------ */
-/*  ---------------------- PAGE "ABOUT US"---------------------- */
+/*  ---------------------- PAGE "COACHES"---------------------- */
 /* ------------------------------------------------------------- */
 
 #coachesFirstDiv{
     height: 60vh;
     background-image: url(FlowHousebackground.png);
     background-size: cover;
-
 }
 #coachesSecondDiv{
     height: auto;
@@ -359,12 +389,33 @@ nav #navSocialMedias img:hover{
     height: 300px;
     border-radius: 2%;
 }
-.coachesClassDiv, .coachesClassDivText{
+.coachesClassDiv{
     display:flex;
     padding: 2em;
     align-items: center;
     font-family: var(--fontFamily);
     justify-content: center;
+}
+.coachesClassDivText{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.coachesClassDivTextMidBox{
+    text-align: center;
+    line-height: 2em;
+    max-width: 70%;
+    font-family: var(--fontFamily);
+    border-bottom: 1px solid;
+    border-color: var(--blackColorLogo);
+}
+.coachesClassDivTextMidBox h1{
+    line-height: 4em;
+}
+.coachesClassDivTextMidBox p i{
+    line-height: 4em;
+    float:right
 }
 .coachesClassDiv:nth-of-type(1){
     grid-column: 1;
@@ -377,6 +428,9 @@ nav #navSocialMedias img:hover{
 .coachesClassDiv:nth-of-type(2){
     grid-column: 1;
     grid-row: 3;
+}
+#footerContainer{
+    box-shadow: -1px -47px 70px -100px;
 }
 
 
