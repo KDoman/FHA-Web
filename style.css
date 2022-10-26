@@ -343,6 +343,7 @@ nav #navSocialMedias img:hover{
     height: 60vh;
     background-image: url(FlowHousebackground.png);
     background-size: cover;
+    background-attachment: fixed;
 }
 #aboutUsSecondDiv{
     font-family: var(--fontFamily);
@@ -363,9 +364,35 @@ nav #navSocialMedias img:hover{
 }
 
 #galeryDiv{
-    padding: 8vh;
+    padding: 8vh 0 8vh 0;
     display:flex;
     justify-content: center;
+    width: 100%;
+    background-color: grey;    
+}
+#leftArrow{
+    background-color: aqua;
+    flex:1;
+    width: 100%;
+    height: 35vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#content{
+    background-color: blueviolet;
+    flex:5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#rightArrow{
+    background-color: chocolate;
+    flex:1;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -377,6 +404,7 @@ nav #navSocialMedias img:hover{
     height: 60vh;
     background-image: url(FlowHousebackground.png);
     background-size: cover;
+    background-attachment: fixed;
 }
 #coachesSecondDiv{
     height: auto;
