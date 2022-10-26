@@ -12,20 +12,7 @@ hambMenu.addEventListener('click', () => {
     }
 })
 
+// PICTURE SLIDER ON PAGE "ABOUT US"
 
-
-
-// scrolling
-// window.addEventListener('scroll', () => {
-//     const scroll = window.scrollY;
-//     console.log(scroll);
-//     if(scroll >= c) ){
-//         for(let art of martialArtsClasss){
-//             art.style.opacity = `1`;
-//         }
-//     }else{
-//         for(let art of martialArtsClasss){
-//             art.style.opacity = '0';
-//         }
-//     }
-// })
+const leftArrow = document.querySelector('#leftArrowDiv');
+const rightArrow = document.querySelector('#rightArrowDiv');
