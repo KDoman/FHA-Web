@@ -299,8 +299,8 @@ nav #navSocialMedias img:hover{
     transform:scaleX(100%)
 }
 .footerInfoDiv:nth-of-type(1) img{
-    width: 330px;
-    height: 330px;
+    width: 320px;
+    height: 320px;
 }
 .footerInfoDiv:nth-of-type(1){
     display:flex;
@@ -336,6 +336,26 @@ nav #navSocialMedias img:hover{
     font-family: var(--fontFamily);
     color: var(--whiteColorLogo);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------------------------------------------------- */
 /* ----------------------- PAGE "ABOUT US" ------------------ */
 /* ---------------------------------------------------------- */
@@ -403,6 +423,15 @@ nav #navSocialMedias img:hover{
 
 
 
+
+
+
+
+
+
+
+
+
 /*  ------------------------------------------------------------ */
 /*  ---------------------- PAGE "COACHES"---------------------- */
 /* ------------------------------------------------------------- */
@@ -467,6 +496,70 @@ nav #navSocialMedias img:hover{
 #footerContainer{
     box-shadow: -1px -47px 70px -100px;
 }
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* ---------------GRAFIK -------------- */
+/* --------------------------------------- */
+#grafikFirstDiv{
+    height: 60vh;
+    background-image: url(FlowHousebackground.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#grafikCointeiner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8vh 0;
+    font-family: var(--fontFamily);
+}
+
+#grafikCointeiner h1{
+    padding: 10vh 0;
+}
+#grafikCointeiner table{
+    border-collapse: collapse;
+}
+#grafikCointeiner table td{
+    text-align: center;
+    padding: 1vh;
+    border:2px solid black;
+}
+#grafikCointeiner table th{
+    border:2px solid black;
+}
+#grafikCointeiner table tr:nth-of-type(2n){
+    background-color: grey;
+}
+#grafikCointeiner table tr:nth-of-type(2n-1){
+    background-color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -623,5 +716,12 @@ nav #navSocialMedias img:hover{
     .coachesClassDiv:nth-of-type(2){
         grid-column: 1;
         grid-row: 6;
+    }
+
+
+
+    /* --------------------- TABLE ----------------- */
+    #grafikCointeiner table{
+        font-size: 0.3em;
     }
 }
