@@ -11,8 +11,3 @@ hambMenu.addEventListener('click', () => {
         logo.classList.toggle('hambMenuLogoLineOn')
     }
 })
-
-// PICTURE SLIDER ON PAGE "ABOUT US"
-
-const leftArrow = document.querySelector('#leftArrowDiv');
-const rightArrow = document.querySelector('#rightArrowDiv');

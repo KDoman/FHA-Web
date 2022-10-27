@@ -364,79 +364,41 @@ nav #navSocialMedias img:hover{
 }
 
 #galeryDiv{
-    padding: 8vh 0 8vh 0;
-    display:flex;
-    justify-content: center;
-    width: 100%;
-    /* background-color: grey; */
+    margin: 0 auto;
+    padding: 8vh 0;
+    width: 90%;
+    overflow: hidden;
 }
-#leftArrowDiv{
-    width: 50px;
-    height: 100px;
-    background-color: green;
-    display: auto;
-}
-/* #leftArrowTopSection{
-    width: 11px;
-    height: 50px;
-    background-color: black;
-    border-radius: 0.4em;
-    transform: rotateZ(45deg) translateY(-10px) translateX(15px);
-} */
-/* #leftArrowBottomSection{
-    width: 11px;
-    height: 50px;
-    background-color: black;
-    border-radius: 0.4em;
-    transform: rotateZ(-45deg) translateY(15px);
-} */
-#rightArrowDiv{
-    width: 50px;
-    height: 100px;
-    background-color: green;
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
-/* #rightArrowTopSection{
-    width: 11px;
-    height: 50px;
-    background-color: black;
-    border-radius: 0.4em;
-    transform: rotateZ(-45deg) translateY(15px);
-}
-#rightArrowBottomSection{
-    width: 11px;
-    height: 50px;
-    background-color: black;
-    border-radius: 0.4em;
-    transform: rotateZ(45deg) translateY(-15px);
-} */
 #content{
-    flex:5;
+    position: relative;
+    margin: 0 2vw;
     display:flex;
-    justify-content: center;
     align-items: center;
+    width: fit-content;
+    animation-name: slider;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 40s;
+    animation-timing-function: linear;
 }
 #content img{
+    padding: 0 10px;
+    height: 300px;
     width: fit-content;
-    height: fit-content;
 }
-#leftArrow{
-    flex:1;
-    width: 100%;
-    height: auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+#content:hover{
+    cursor: pointer;
+    animation-play-state: paused;
+
 }
-#rightArrow{
-    flex:1;
-    width: 100%;
-    height: auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+
+@keyframes slider{
+    from{
+        transform:translateX(0%);
+    }
+    to{
+        transform:translateX(-71%);
+    }
 }
 
 
