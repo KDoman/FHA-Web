@@ -1,0 +1,798 @@
+:root {
+    --fontFamily:'Montserrat', sans-serif;
+    --blackColorLogo:rgba(41, 40, 40);
+    --whiteColorLogo:rgb(255, 255, 255);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav #navLogoImg img {
+    width: 35px;
+    height: 35px;
+    padding: 0.3em 0.5em;
+  }
+  
+  #topNavigationBar {
+    display: flex;
+    padding: 0.4em 0;
+    font-family: var(--fontFamily);
+    border-bottom: 2px solid;
+    border-color: var(--blackColorLogo);
+  }
+  
+  /*  */
+  
+  #navList {
+    display: flex;
+    flex-grow: 2;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+  
+    a {
+      text-decoration: none;
+      color: black;
+      position: relative;
+  
+      &::before {
+        position: absolute;
+        content: '';
+        top: 2px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid black;
+        transform: scaleX(0%);
+        transition: transform 0.3s;
+      }
+  
+      &:hover::before {
+        transform: scaleX(100%);
+      }
+    }
+  }
+  
+  /*  */
+  
+  nav #navSocialMedias img {
+    width: 30px;
+    height: 30px;
+    padding: 0.3em 0.3em;
+    opacity: 0.55;
+    transition: opacity 0.5s;
+  
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  
+  #navSocialMedias {
+    display: flex;
+    align-items: center;
+    padding-right: 0.5em;
+    position: relative;
+  }
+  
+  /* HAMBURGER MENU */
+  
+  #hamburgerMenu {
+    position: absolute;
+    display: none;
+    left: -55px;
+    width: 35px;
+    height: 30px;
+    transform: rotateZ(90deg);
+    align-items: center;
+    justify-content: space-evenly;
+  
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  .hambMenuLogoLine {
+    width: 15%;
+    height: 90%;
+    background-color: var(--blackColorLogo);
+    border-radius: 0.3em;
+    transition: transform 0.3s;
+  }
+  
+  .hambMenuLogoLineOn {
+    &:nth-of-type(1) {
+      width: 15%;
+      height: 90%;
+      background-color: var(--blackColorLogo);
+      border-radius: 0.3em;
+      transform: rotateZ(45deg) translateX(7px) translateY(-7px);
+      transition: transform 0.3s;
+    }
+  
+    &:nth-of-type(2) {
+      width: 15%;
+      height: 90%;
+      background-color: var(--blackColorLogo);
+      transform: scaleY(0%);
+      border-radius: 0.3em;
+    }
+  
+    &:nth-of-type(3) {
+      width: 15%;
+      height: 90%;
+      background-color: var(--blackColorLogo);
+      border-radius: 0.3em;
+      transform: rotateZ(-45deg) translateX(-7px) translateY(-7px);
+      transition: transform 0.3s;
+    }
+  }
+  
+  /* FIRST MAIN SECTION MAIN PAGE */
+  
+  #firstSectionDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(FlowHousebackground.png);
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
+  /* HAMBURGER MENU ON */
+  
+  .hambMenuOn {
+    position: absolute;
+    height: 100vh;
+    background-color: var(--blackColorLogo);
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  
+    ul {
+      list-style: none;
+      text-align: center;
+    }
+  }
+  
+  .hambMenuOnButton {
+    display: flex;
+  }
+  
+  .hambMenuOn ul li {
+    a {
+      text-decoration: none;
+      color: var(--whiteColorLogo);
+      font-family: var(--fontFamily);
+      font-size: 1.2em;
+      position: relative;
+  
+      &::before {
+        position: absolute;
+        content: '';
+        top: 2px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  
+    padding: 3em 0;
+  }
+  
+  /* SECOND SECTION MAIN PAGE */
+  
+  #secondSectionDiv {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 5vw;
+  }
+  
+  .martialArtsClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+    height: 300px;
+    width: 300px;
+    font-family: var(--fontFamily);
+    color: whitesmoke;
+    text-shadow: 1px 2px 2px black;
+    border-radius: 2%;
+    font-size: 1.5em;
+  
+    /* opacity: 0;
+    transition: opacity 0.5s; */
+  
+    &:nth-of-type(1) {
+      background-image: url(JuiJitsu.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1;
+      grid-row: 1;
+    }
+  
+    &:nth-of-type(2) {
+      background-image: url(TrenerKarol.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 2;
+      grid-row: 1;
+    }
+  
+    &:nth-of-type(3) {
+      background-image: url(TreningMotoryczny2.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 3;
+      grid-row: 1;
+    }
+  
+    &:nth-of-type(4) {
+      background-image: url(BJJKids.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 4;
+      grid-row: 1;
+    }
+  }
+  
+  .martialArtsClassText {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 25% 10% 0 10%;
+    font-family: var(--fontFamily);
+  
+    &:nth-of-type(1) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  
+    &:nth-of-type(2) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  
+    &:nth-of-type(3) {
+      grid-column: 3;
+      grid-row: 2;
+    }
+  
+    &:nth-of-type(4) {
+      grid-column: 4;
+      grid-row: 2;
+    }
+  }
+  
+  /* THIRD SECTION MAIN PAGE */
+  
+  #thirdSectionDiv {
+    height: 100vh;
+    width: auto;
+    background-image: url(background2.png);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* FOOTER SECTION */
+  
+  #footerContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    font-family: var(--fontFamily);
+    color: var(--blackColorLogo);
+  }
+  
+  .footerInfoDiv {
+    display: flex;
+    justify-content: center;
+  
+    ul {
+      list-style: none;
+  
+      h2 {
+        padding: 0.5em 0;
+        text-align: center;
+      }
+  
+      li {
+        display: flex;
+        align-items: center;
+        padding: 1em 0;
+  
+        a {
+          text-decoration: none;
+          color: var(--blackColorLogo);
+          position: relative;
+  
+          &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 2px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0%);
+            border-bottom: 1px solid;
+            border-color: var(--blackColorLogo);
+            transition: transform 0.3s;
+          }
+  
+          &:hover::after {
+            transform: scaleX(100%);
+          }
+        }
+      }
+    }
+  
+    &:nth-of-type(1) {
+      img {
+        width: 320px;
+        height: 320px;
+      }
+  
+      display: flex;
+      align-items: center;
+    }
+  
+    &:nth-of-type(2) {
+      padding-top: 10vh;
+    }
+  
+    &:nth-of-type(3) {
+      img {
+        width: 20px;
+        height: 20px;
+        padding-right: 0.5em;
+      }
+  
+      padding-top: 10vh;
+    }
+  
+    &:nth-of-type(4) {
+      padding-top: 10vh;
+  
+      img {
+        width: 20px;
+        height: 20px;
+        padding-right: 0.5em;
+      }
+    }
+  }
+  
+  #authorDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    background-color: var(--blackColorLogo);
+    margin: 1em;
+    font-family: var(--fontFamily);
+    color: var(--whiteColorLogo);
+  }
+  
+  /* ---------------------------------------------------------- */
+  /* ----------------------- PAGE "ABOUT US" ------------------ */
+  /* ---------------------------------------------------------- */
+  
+  #aboutUsFirstDiv {
+    height: 60vh;
+    background-image: url(FlowHousebackground.png);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #aboutUsSecondDiv {
+    font-family: var(--fontFamily);
+  }
+  
+  #aboutUsSecondDivText {
+    h1 {
+      text-align: center;
+      padding-top: 8vh;
+    }
+  
+    img {
+      width: 200px;
+      height: 200px;
+      padding: 8vh 0;
+    }
+  
+    p {
+      padding: 0 10vw;
+      text-align: center;
+      line-height: 1.7em;
+    }
+  }
+  
+  #galeryDiv {
+    margin: 0 auto;
+    padding: 8vh 0;
+    width: 90%;
+    overflow: hidden;
+  }
+  
+  #content {
+    position: relative;
+    margin: 0 2vw;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    animation-name: slider;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+  
+    img {
+      padding: 0 10px;
+      height: 300px;
+      width: fit-content;
+    }
+  
+    &:hover {
+      cursor: pointer;
+      animation-play-state: paused;
+    }
+  }
+  
+  @keyframes slider {
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(-71%);
+    }
+  }
+  
+  /*  ------------------------------------------------------------ */
+  /*  ---------------------- PAGE "COACHES"---------------------- */
+  /* ------------------------------------------------------------- */
+  
+  #coachesFirstDiv {
+    height: 60vh;
+    background-image: url(FlowHousebackground.png);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #coachesSecondDiv {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  
+  .coachesClassDiv {
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 2%;
+    }
+  
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    font-family: var(--fontFamily);
+    justify-content: center;
+  }
+  
+  .coachesClassDivText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  .coachesClassDivTextMidBox {
+    text-align: center;
+    line-height: 2em;
+    max-width: 70%;
+    font-family: var(--fontFamily);
+    border-bottom: 1px solid;
+    border-color: var(--blackColorLogo);
+  
+    h1 {
+      line-height: 4em;
+    }
+  
+    p i {
+      line-height: 4em;
+      float: right;
+    }
+  }
+  
+  .coachesClassDiv {
+    &:nth-of-type(1) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  
+    &:nth-of-type(3) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  
+    &:nth-of-type(2) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+  }
+  
+  #footerContainer {
+    box-shadow: -1px -47px 70px -100px;
+  }
+  
+  /* --------------------------------------- */
+  /* ---------------GRAFIK -------------- */
+  /* --------------------------------------- */
+  
+  #grafikFirstDiv {
+    height: 60vh;
+    background-image: url(FlowHousebackground.png);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #grafikCointeiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8vh 0;
+    font-family: var(--fontFamily);
+  
+    h1 {
+      padding: 10vh 0;
+    }
+  
+    table {
+      border-collapse: collapse;
+  
+      td {
+        text-align: center;
+        padding: 1vh;
+        border: 2px solid black;
+      }
+  
+      th {
+        border: 2px solid black;
+      }
+  
+      tr {
+        &:nth-of-type(2n) {
+          background-color: grey;
+        }
+  
+        &:nth-of-type(2n-1) {
+          background-color: rgb(226, 226, 226);
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    #navList {
+      display: none;
+    }
+  
+    #topNavigationBar {
+      justify-content: space-between;
+    }
+  
+    /* HAMBURGER MENU */
+  
+    #hamburgerMenu {
+      position: absolute;
+      display: flex;
+    }
+  
+    /* grid system MAIN SEC */
+  
+    #secondSectionDiv {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      justify-items: center;
+      height: auto;
+    }
+  
+    .martialArtsClassText {
+      padding: 0 3em;
+      align-items: center;
+    }
+  
+    .martialArtsClass {
+      &:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 1;
+      }
+  
+      &:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 3;
+      }
+  
+      &:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 5;
+      }
+  
+      &:nth-of-type(4) {
+        grid-column: 1;
+        grid-row: 7;
+      }
+    }
+  
+    .martialArtsClassText {
+      &:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 2;
+      }
+  
+      &:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 4;
+      }
+  
+      &:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 6;
+      }
+  
+      &:nth-of-type(4) {
+        grid-column: 1;
+        grid-row: 8;
+      }
+    }
+  
+    /* Grid system FOOTER */
+  
+    #footerContainer {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+  
+    /* --------------------- TABLE ----------------- */
+    /* #grafikCointeiner table{
+        font-size: 0.3em;
+    } */
+  }
+  
+  @media screen and (min-width: 651px) and (max-width: 1300px) {
+    .hambMenuOnButton {
+      display: none;
+    }
+  
+    /* grid system */
+  
+    #secondSectionDiv {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      justify-items: center;
+      height: auto;
+    }
+  
+    .martialArtsClassText {
+      padding: 0 3em;
+      align-items: center;
+    }
+  
+    .martialArtsClass {
+      &:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 1;
+      }
+  
+      &:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 1;
+      }
+  
+      &:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 3;
+      }
+  
+      &:nth-of-type(4) {
+        grid-column: 2;
+        grid-row: 3;
+      }
+    }
+  
+    .martialArtsClassText {
+      &:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 2;
+      }
+  
+      &:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 2;
+      }
+  
+      &:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 4;
+      }
+  
+      &:nth-of-type(4) {
+        grid-column: 2;
+        grid-row: 4;
+      }
+    }
+  
+    /* grid system Footer */
+  
+    #footerContainer {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1301px) {
+    .hambMenuOnButton {
+      display: none;
+    }
+  }
+  
+  /* COACHES GRID SYSTEM */
+  @media screen and (max-width: 750px) {
+    #navList {
+      font-size: 1em;
+    }
+  
+    #coachesSecondDiv {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+  
+    .coachesClassDiv:nth-of-type(1) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  
+    .coachesClassDivText:nth-of-type(1) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  
+    .coachesClassDiv:nth-of-type(3) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+  
+    .coachesClassDivText:nth-of-type(3) {
+      grid-column: 1;
+      grid-row: 4;
+    }
+  
+    .coachesClassDiv:nth-of-type(2) {
+      grid-column: 1;
+      grid-row: 5;
+      grid-column: 1;
+      grid-row: 6;
+    }
+  } 
