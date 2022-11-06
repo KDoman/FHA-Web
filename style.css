@@ -351,9 +351,9 @@ nav #navSocialMedias img:hover {
   color: var(--whiteColorLogo);
 }
 
-/* ---------------------------------------------------------- */
-/* ----------------------- PAGE "ABOUT US" ------------------ */
-/* ---------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------- PAGE "ABOUT US" ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------ */
 #aboutUsFirstDiv {
   height: 60vh;
   background-image: url(FlowHousebackground.png);
@@ -436,9 +436,9 @@ nav #navSocialMedias img:hover {
     transform: translateX(-71%);
   }
 }
-/*  ------------------------------------------------------------ */
-/*  ---------------------- PAGE "COACHES"---------------------- */
-/* ------------------------------------------------------------- */
+/*  -------------------------------------------------------------------------------------------------------------------- */
+/*  -------------------------------------------------- PAGE "COACHES"-------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------- */
 #coachesFirstDiv {
   height: 60vh;
   background-image: url(FlowHousebackground.png);
@@ -506,9 +506,9 @@ nav #navSocialMedias img:hover {
   box-shadow: -1px -47px 70px -100px;
 }
 
-/* --------------------------------------- */
-/* ---------------GRAFIK -------------- */
-/* --------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------GRAFIK ------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
 #grafikFirstDiv {
   height: 60vh;
   background-image: url(FlowHousebackground.png);
@@ -543,6 +543,143 @@ nav #navSocialMedias img:hover {
 #grafikCointeiner table tr:nth-of-type(2n-1) {
   background-color: rgb(226, 226, 226);
 }
+#table-discription{
+  display:flex;
+  justify-content: center;
+  padding: 0 0 10vh 0;
+}
+#table-discription ul img{
+  width: 20px;
+  height: 20px;
+  padding: 0 1em 0 0;
+}
+#table-discription li{
+  display:flex;
+  align-items: center;
+  padding: 0.5em;
+  font-family: var(--fontFamily);
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------CENNIK ------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+
+#cennik-first-div{
+  height: 60vh;
+  background-image: url(FlowHousebackground.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#cennik-main-cointainer{
+  padding: 8vh 0;
+}
+#cennik-main-cointainer h1{
+  font-size: 1.5em;
+  padding: 10vh 0;
+  font-family: var(--fontFamily);
+  text-align: center;
+}
+
+#cennik-second-div-center {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fontFamily);
+}
+#cennik-second-div-center ul img{
+  width: 20px;
+  height: 20px;
+  padding: 0 1em 0 0;
+}
+#cennik-second-div-center ul{
+  list-style: none;
+}
+#cennik-second-div-center li{
+  display:flex;
+  align-items: center;
+  padding: 0.5em 0;
+}
+#cennik-second-div-center li:nth-of-type(1){
+  display:flex;
+  align-items: center;
+  padding: 0 0 0.5em 0;
+}
+
+#cennik-second-div p{
+  padding: 1em 0;
+}
+#cennik-main-cointainer p{
+  text-align: center;
+  font-family: var(--fontFamily);
+  padding: 2em 0 0 0;
+}
+
+#cennik-description {
+  text-align: center;
+  font-family: var(--fontFamily);
+  padding: 0 0 10vh 0;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------CONTACT ------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+
+#contact-first-div{
+  height: 60vh;
+  background-image: url(FlowHousebackground.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contact-enter-text{
+  text-align: center;
+  font-family: var(--fontFamily);
+  padding: 3em 3em;
+}
+#contact-enter-text p {
+  padding: 1em 0;
+}
+#contact-second-div{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 5vw;
+}
+.contact-second-div-box:nth-of-type(1){
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5em;
+}
+.contact-second-div-box:nth-of-type(2){
+  font-family: var(--fontFamily);
+  padding: 0 1.5em;
+}
+.contact-second-div-box h2 {
+  padding: 2em 0;
+}
+.contact-second-div-box ul img{
+  width: 20px;
+  height: 20px;
+  padding: 0 1em 0 0;
+}
+.contact-second-div-box ul{
+  list-style: none;
+}
+.contact-second-div-box ul li{
+  display:flex;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 650px) {
   #navList {
@@ -698,4 +835,7 @@ nav #navSocialMedias img:hover {
     grid-column: 1;
     grid-row: 6;
   }
-}/*# sourceMappingURL=style.css.map */
+  #contact-second-div{
+    display:block;
+  }
+}
